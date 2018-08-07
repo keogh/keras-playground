@@ -25,6 +25,18 @@ RUN pip install \
     keras \
     h5py
 
+# Descomentar si se quiere soporte de face-recognition con dlib
+# Instalamos requisitos para Dlib
+# https://www.pyimagesearch.com/2018/01/22/install-dlib-easy-complete-guide/
+# RUN apt-get update
+# RUN apt-get install -y build-essential cmake
+# RUN apt-get install -y libopenblas-dev liblapack-dev
+# RUN apt-get install -y python3-dev
+
+# Descomentar si se quiere soporte de face-recognition con dlib
+# Instalamos python dlib module (dura muchos minutos)
+# RUN pip install dlib
+
 # Activamos las extensiones para widgets en libretas
 RUN jupyter nbextension enable --py widgetsnbextension --sys-prefix
 
