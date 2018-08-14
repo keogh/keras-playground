@@ -23,12 +23,12 @@ RUN pip install \
     scikit-image \
     tensorflow \
     keras \
-    h5py
+    h5py \
+    opencv-python
 
 # Descomentar si se quiere soporte de face-recognition con dlib
 # Instalamos requisitos para Dlib
 # https://www.pyimagesearch.com/2018/01/22/install-dlib-easy-complete-guide/
-# RUN apt-get update
 # RUN apt-get install -y build-essential cmake
 # RUN apt-get install -y libopenblas-dev liblapack-dev
 # RUN apt-get install -y python3-dev
