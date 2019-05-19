@@ -4,8 +4,10 @@
 .ipython/
 .jupyter/
 .keras/
+.ipynb_checkpoints/
 
 face-recognition/github-krasserm-face-recognition/
 face-recognition/__pycache__/
 face-recognition/dlib-models/
 face-recognition/openface-model/
+face-recognition/.ipynb_checkpoints/
