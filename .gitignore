@@ -15,3 +15,6 @@ face-recognition/.ipynb_checkpoints/
 
 yolov3/yolov3.weights
 yolov3/vendor/
+yolov3/old/
+yolov3/yolo.predictions
+yolov3/model.h5
