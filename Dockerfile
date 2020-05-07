@@ -1,6 +1,13 @@
 # Vamos a partir de la imagen oficial de python 3
 FROM python:3
 
+# Upgrade pip
+RUN pip install --upgrade pip
+
+# Upgrade seteuptools for tensorflow
+RUN pip install --upgrade setuptools
+
+
 # Instalamos jupyterlab y herramientas extras para las libretas
 RUN pip install notebook jupyterlab
 
@@ -22,6 +29,7 @@ RUN pip install \
     scikit-learn \
     scikit-image \
     tensorflow \
+    tensorflowjs \
     keras \
     h5py \
     opencv-python
@@ -38,9 +46,10 @@ RUN pip install \
 # RUN pip install dlib
 
 # Activamos las extensiones para widgets en libretas
-RUN jupyter nbextension enable --py widgetsnbextension --sys-prefix
+# RUN jupyter nbextension enable --py widgetsnbextension --sys-prefix
 
 # Activamos las extensiones para widgets en jupuyterlab (requiere nodejs)
-RUN curl -sL https://deb.nodesource.com/setup_9.x | bash -
-RUN apt-get install -y nodejs
-RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager
+# RUN curl -sL https://deb.nodesource.com/setup_9.x | bash -
+# RUN apt-get install -y nodejs
+# RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager
+
